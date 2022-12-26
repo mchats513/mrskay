@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Common Icon Starts -->
+    <link rel="stylesheet" href="assets/font-awesome.css">
+    <link rel="stylesheet" href="assets/font-awesome.min.css">
+
+
+    <style>
+      .bg-orange{background-color: #333333;}
+      .bg-army{background-color: rgb(31, 66, 31);
+      color: rgb(255, 166, 0);}
+
+      .bg-army-1{background-color: rgb(76, 139, 76);
+      color: rgb(255, 167, 3);}
+
+      .bd-placeholder-img {
+        
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .site-header {
+  background-color: rgba(255, 166, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      a.sosh:link{
+        color: orange;
+        text-decoration: none;
+      }
+      /* visited link */
+a.sosh:visited {
+  color: orange;
+}
+
+/* mouse over link */
+a.sosh:hover {
+  color: #FDDC7B;
+}
+
+/* selected link */
+a.sosh:active {
+  color: blue;
+}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/carousel.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="assets/features.css" rel="stylesheet">
+      <link href="assets/advisor.css" rel="stylesheet">
+
+
+
+
+  </head>
+  <body class="">
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-orange bg-orange">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        MrsKay
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#us">Who are we</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#our_products">Our Products</a>
+          </li>  
+        
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+         
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container col-xxl-8 px-4 py-3">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6 rounded-3 shadow p-4 mb-4">
+              <img src="img/1.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3" style="color:orange">Opening Title</h1>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi voluptates quidem, quibusdam iste suscipit beatae fugit illum debitis maxime corrupti quia quis mollitia vel nihil consectetur, quisquam aspernatur nobis doloribus.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="px-4 pt-3 my-5 text-center border-bottom">
+          <h1 class="display-4 fw-bold">Our Brand</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sapiente porro deleniti tenetur iusto hic sequi illo qui maxime id. In, architecto aspernatur. Obcaecati enim fugit facere quo voluptates voluptate?
+          </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+          <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+              <img src="img/logos.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="px-4 py-3 my-5 text-center">
+          <img class="d-block mx-auto mb-4 rounded-circle" src="img/logo1.jpg" alt="" width="150" height="150">
+          <h1 class="display-5 fw-bold">Another Title</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eum quaerat voluptatem deserunt obcaecati unde ratione consequuntur illo magni aperiam facere, adipisci eveniet doloremque dolorem cupiditate officia. Cum, accusantium consectetur.
+            </p>
+            
+          </div>
+        </div>>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing" >
+
+    <!-- Three columns of text below the carousel -->
+   
+    <!-- /.row -->
+
+
+    <hr class="featurette-divider" id="us">
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="container px-4 py-3 shadow" >
+      <h2 class="pb-1" >Who are we</h2>
+
+
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          
+          <h2 style="color:orange">Our Vision</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.
+          </p>
+       
+        </div>
+        <div class="feature col">
+         
+          <h2 style="color:orange">Our Mission</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+       
+        </div>
+        <div class="feature col">
+          <h2 style="color:orange">Our Values</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+       
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <hr class="featurette-divider" id="our_products">
+
+    <div class="row featurette shadow" data-masonry='{"percentPosition": true }'>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+       <img src="img/2.jpg" class="featurette-image mx-auto" alt="" style="width: 100%;">
+          
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <img src="img/3.jpg" class="featurette-image mx-auto" alt="" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <img src="img/4.jpg" class="featurette-image mx-auto" alt="" style="width: 100%;">
+
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+           
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+       <img src="img/8.png" class="featurette-image mx-auto" alt="" style="width: 100%;">
+          
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <img src="img/3.jpg" class="featurette-image mx-auto" alt="" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <img src="img/2.jpg" class="featurette-image mx-auto" alt="" style="width: 100%;">
+
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae atque iste id, maiores ducimus ad repudiandae neque laboriosam odio fuga cumque error ex impedit nesciunt accusantium? Nam, vero neque.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+<!-- -->
+
+    <hr class="featurette-divider" id="contact">
+
+    <!-- /END THE FEATURETTES -->
+
+    <div class="row featurette shadow p-4 mb-5">
+      
+  <div class="container px-3 py-3" id="icon-grid">
+    <h3 class="color-primary" style="color:orange">We would love to hear from you.</h3>
+    <h5>Contact us for any queries.</h5>
+
+    <div class="row g-4 py-5">
+   
+      <div class="col-md-4 d-flex align-items-start">
+         <div class="bi text-muted flex-shrink-0 me-3">
+          <ul class="social">
+            <li class="animate bounceIn animate-it animated">
+                <i class="fa fa-phone fa-2x color-primary" style="color:orange"></i>
+            </li>
+        </ul>
+      </div>
+        
+        <div>
+          <h4 class="fw-bold mb-0">Phone</h4>
+          <a href="phone:+263771053421" class="sosh">+263 77 105 3421</a>
+        </div>
+      </div>
+      
+      <div class="col-md-4 d-flex align-items-start">
+         <div class="bi text-muted flex-shrink-0 me-3">
+          <ul class="social">
+            <li class="animate bounceIn animate-it animated">
+                <i class="fa fa-envelope fa-2x color-primary" style="color:orange"></i>
+            </li>
+        </ul>
+      </div>
+        
+        <div>
+          <h4 class="fw-bold mb-0">Email</h4>
+          <p style="color:orange">lmarashe@gmail.com</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 d-flex align-items-start">
+         <div class="bi text-muted flex-shrink-0 me-3">
+          <ul class="social">
+              <li class="animate bounceIn animate-it animated">
+                  <i class="fa fa-map-marker fa-2x color-primary" style="color:orange"></i>
+              </li>
+          </ul>
+      </div>
+        
+        <div>
+          <h4 class="fw-bold mb-0">Address</h4>
+          <p style="color:orange">10325 Palm Village <br>
+            Cleverhill Borrowdale<br>
+            Harare, Zimbabwe</p>
+        </div>
+      </div>
+      
+     
+     
+
+      <div class="col-md-4 d-flex align-items-start">
+        <div class="bi text-muted flex-shrink-0 me-3">
+         <ul class="social">
+           <li class="animate bounceIn animate-it animated">
+               <i class="fa fa-facebook fa-2x color-primary" style="color:orange"></i>
+           </li>
+       </ul>
+     </div>
+       
+       <div>
+          <h4 class="fw-bold mb-0">Facebook</h4>
+         <a href="#" class="sosh">mrskayzw</a>
+       </div>
+     </div>
+     
+     <div class="col-md-4 d-flex align-items-start">
+        <div class="bi text-muted flex-shrink-0 me-3">
+         <ul class="social">
+           <li class="animate bounceIn animate-it animated">
+               <i class="fa fa-twitter fa-2x color-primary" style="color:orange"></i>
+           </li>
+       </ul>
+     </div>
+       
+       <div>
+          <h4 class="fw-bold mb-0">Twitter</h4>
+         <a href="#" class="sosh">mrskayzw</a>
+       </div>
+     </div>
+     
+     <div class="col-md-4 d-flex align-items-start">
+        <div class="bi text-muted flex-shrink-0 me-3">
+         <ul class="social">
+             <li class="animate bounceIn animate-it animated">
+                 <i class="fa fa-instagram fa-2x color-primary" style="color:orange"></i>
+             </li>
+         </ul>
+     </div>
+       
+       <div>
+          <h4 class="fw-bold mb-0">Instagram</h4>
+         <a href="#" class="sosh">mrskayzw</a>
+       </div>
+     </div>
+     
+
+
+    </div>
+  </div>
+
+
+
+
+    </div>
+ 
+
+
+
+  <!-- CONTACT US -->
+ 
+
+
+
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Mrskay, Pvt. 
+      <!--&middot;  <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+    </p>
+  </footer>
+</main>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/masonry.pkgd.min.js"></script>
+
+      
+  </body>
+</html>
